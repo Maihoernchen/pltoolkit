@@ -2,10 +2,6 @@
 requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
-[testpypi]
-username = 
-password = pypi-AgENdGVzdC5weXBpLm9yZwIkOGM3YjBiOGMtZDhkZS00ZjViLWIyYjktNzdhZDk5NThmMDBlAAIqWzMsImQ0YWNiZjExLTc2NWItNDM5MS1iODE2LWJlNGQ3YjhmYTcyYyJdAAAGIIf82gQObnsb0R-w1UEMeTp_lbW_aJuAaWXsX3vi8Xa5
-
 [project]
 dependencies = [
   "numpy",
@@ -29,5 +25,5 @@ license = "MIT"
 license-files = ["LICENSE*"]
 
 [project.urls]
-Homepage = "git.tu-berlin.de:lilith/pl2.git"
-Issues = "https://github.com/Maiheornchen/sampleproject/issues"
+Homepage = "https://github.com/Maihoernchen/pltoolkit.git"
+Issues = "https://github.com/Maiheornchen/pltoolkit/issues"

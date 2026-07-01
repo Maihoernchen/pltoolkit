@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 dependencies = [
   "numpy",
-  "mathplotlib",
+  "matplotlib",
   "pandas",
   "scipy",
 ]

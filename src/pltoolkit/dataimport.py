@@ -11,7 +11,8 @@ class Scaff:
             self.filenames = filenames
         elif dir:
             path = dir
-            self.filenames = os.listdir()    
+            self.filenames = os.listdir(path)
+            print(f"Files in directory {path}: {self.filenames}")
         else:
             raise Exception("No List of filenames or directory provided.")
         if type:
@@ -48,4 +49,3 @@ class Scaff:
                 if self.scale[filename] >=2:
                     columns[filename] = columns[filename].astype(float).to_numpy()
         return columns
-# Scaff(['../../../data/10/5.txt'], gencols=1)

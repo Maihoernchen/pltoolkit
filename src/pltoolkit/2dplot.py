@@ -58,7 +58,7 @@ class pltcollection:
         except Exception as e:
             raise ValueError("An error occurred while saving the data files. Have you called the Scaff class with gencols=1?") from e
         
-a = pltcollection(di.Scaff(['~/Documents/unineu/pl2/data/10/5.txt'], gencols=1))
+a = pltcollection(di.Scaff(dir='~/Documents/unineu/pl2/data/10/', includes=['.txt'], gencols=1))
 a.plot2d(0, 't', 'y', title='Test Plot', xlabel='X-axis', ylabel='Y-axis', legend=True)
 a.safeplot()
 a.safedatfiles()

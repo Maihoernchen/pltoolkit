@@ -43,11 +43,11 @@ class Scaff:
         if filenames:
 
             # Alle Pfade vereinheitlichen
-            self.filenames = [Path(f).resolve() for f in filenames]
+            self.filenames = [Path(f).expanduser().resolve() for f in filenames]
 
         elif directory:
 
-            directory = Path(directory).resolve()
+            directory = Path(directory).expanduser().resolve()
 
             if not directory.exists():
                 raise FileNotFoundError(directory)

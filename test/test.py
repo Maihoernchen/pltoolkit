@@ -1,5 +1,5 @@
-import dataimport as di
-import 2dplot
+from pltoolkit import dataimport as di
+from pltoolkit import plotter as plotter
 
 scaff = di.Scaff(
     directory="~/Documents/unineu/pl2/data/10",
@@ -7,7 +7,7 @@ scaff = di.Scaff(
     generate_columns=True,
 )
 
-plots = 2dplot.PltCollection(scaff)
+plots = plotter.PltCollection(scaff)
 
 plots.plot2d(
     xname="t",

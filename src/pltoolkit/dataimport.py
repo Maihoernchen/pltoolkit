@@ -48,4 +48,4 @@ class Scaff:
                 if self.scale[filename] >=2:
                     columns[filename] = columns[filename].astype(float).to_numpy()
         return columns
-Scaff(['../../../data/10/5.txt'], gencols=1)
+# Scaff(['../../../data/10/5.txt'], gencols=1)

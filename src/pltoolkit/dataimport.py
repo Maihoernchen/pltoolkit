@@ -60,7 +60,7 @@ class Scaff:
 
         else:
             raise ValueError(
-                "Entweder 'filenames' oder 'directory' angeben."
+                "Weder 'filenames' noch 'directory' angeben."
             )
 
         # ----------------------------------------------------------
